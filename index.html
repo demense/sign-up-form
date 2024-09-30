@@ -42,15 +42,18 @@
                 </div>
                 <div class="password">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
+                    <p>* Passwords do not match</p>
                 </div>
-                <div class="confirm-password">
+                <div class="confirm-pass">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <input type="password" name="confirm-password" id="confirm-password" required>
                 </div>
                 </section>
             </form>
         </div>
+        <button type="submit">Create Account</button>
+        <p class="log-in">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>

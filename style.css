@@ -34,13 +34,15 @@ p, h1, h2, h3, h4, h5, h6 {
     src: url(./assets/Fonts/Norse-Bold.otf);
 }
 :root {
-    --left-side-width: 524px;
+    --left-side-width: 479px;
     --margin: 45px;
-}
+} 
   /* ------------------------------------------------------ */
 
 .dark-bg {
-    max-width: var(--left-side-width); 
+    min-width: var(--left-side-width); 
+    height: 1000px;
+    
 }
 
 .logo {
@@ -82,6 +84,7 @@ div.form {
     box-shadow: 0px 5px 7px rgb(206, 206, 206);
 }
 
+
 form {
     background-color: white;
     font-family: inherit;
@@ -92,22 +95,35 @@ form {
 section {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 0 15px 0;
+    padding: 25px 0 0px 0;
 }
 
 section > div {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     max-width: 270px;
     margin-bottom: 23px;
 }
 
 input {
     width: 270px;
-    /* max-height: 30px; */
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 3px;
+}
+input:focus {
+    border: 0;
+    outline: 1px solid rgb(0 0 255);
+    box-shadow: 4px 4px 4px rgb(206, 206, 206); 
+}
+input:invalid {
+    border: 0;
+    outline: 1px solid rgb(255 0 0);
+
 }
 
-.last-name, .phone-number, .confirm-password {
+.last-name, .phone-number, .confirm-pass {
     margin-left: 70px;
 }
 
@@ -123,4 +139,39 @@ label {
     letter-spacing: 2px;
     font-weight: 600;
 }
+
+.password > p {
+    font-family: inherit;
+    font-size: 12px;
+    color: red;
+}
+
+button {
+    padding: 12px 50px 12px 50px;
+    border-radius: 10px;
+    margin-left: var(--margin);
+    margin-top: 35px;
+    font-family: inherit;
+    font-weight: 800;
+    color: white;
+    font-size: 1.1rem;
+    background-color: rgb(25, 36, 60);
+    box-shadow: 4px 4px 4px rgb(206, 206, 206);
+}
+
+.log-in {
+    margin-left: var(--margin);
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(25, 36, 60);
+    font-weight: 700;
+}
+
+
+
 
